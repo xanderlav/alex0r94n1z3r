@@ -1,0 +1,24 @@
+{
+  "name": "alex0r94n1z3r",
+  "version": "1.0.0",
+  "description": "Sequelize project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xanderlav/alex0r94n1z3r.git"
+  },
+  "keywords": [
+    "sequelize",
+    "node.js"
+  ],
+  "author": "Alejandro R. Lopez Avila",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xanderlav/alex0r94n1z3r/issues"
+  },
+  "homepage": "https://github.com/xanderlav/alex0r94n1z3r#readme"
+}
