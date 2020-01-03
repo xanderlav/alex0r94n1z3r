@@ -1,0 +1,18 @@
+
+<section id="tasks" class="container">
+<h1>Tasks template</h1>
+
+{{#each tasks}}
+<div class="task">
+    <h4>Title</h4>
+    <p>{{taskInfo}}</p>
+    <h4>Task detail</h4>
+    <p>{{taskDescription}}</p>
+    <h4>Date</h4>
+    <p>{{createdAt}}</p>
+</div>
+{{else}}
+<p>No tasks available</p>
+{{/each}}
+
+</section>

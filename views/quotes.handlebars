@@ -1,0 +1,16 @@
+
+<section id="quotes" class="container">
+<h1>Quotes template</h1>
+
+{{#each tasks}}
+<div class="task">
+    <h4>Quote</h4>
+    <p>{{quoteText}}</p>
+    <h4>Date</h4>
+    <p>{{createdAt}}</p>
+</div>
+{{else}}
+<p>No quotes available</p>
+{{/each}}
+
+</section>
