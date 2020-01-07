@@ -15,27 +15,27 @@ Task.findAll()
 .catch(err => console.log(err)));
 
 // Add a task
-router.get('/add', (req, res) => {
-    const data = {
-        userId: 1,
-        createdAt: Date.now(),
-        taskInfo: "Ajustar models Quotes",
-        taskDescription: 'Esta es la tarea que se agrega para probar funcionalidad',
-        taskChecked: false
-    }
+// router.get('/add', (req, res) => {
+//     const data = {
+//         userId: 1,
+//         createdAt: Date.now(),
+//         taskInfo: "Ajustar models Quotes",
+//         taskDescription: 'Esta es la tarea que se agrega para probar funcionalidad',
+//         taskChecked: false
+//     }
 
-let { userId, taskInfo, taskDescription, createdAt,taskChecked } = data;
+// let { userId, taskInfo, taskDescription, createdAt,taskChecked } = data;
 
-// Insert into table
-Task.create({
-    userId: userId,
-    taskInfo: taskInfo,
-    taskDescription: taskDescription,
-    createdAt: createdAt,
-    taskChecked: taskChecked
-})
-    .then(tasks => res.redirect("/tasks"))
-    .catch(err => console.log(err));
-});
+// // Insert into table
+// Task.create({
+//     userId: userId,
+//     taskInfo: taskInfo,
+//     taskDescription: taskDescription,
+//     createdAt: createdAt,
+//     taskChecked: taskChecked
+// })
+//     .then(tasks => res.redirect("/tasks"))
+//     .catch(err => console.log(err));
+// });
 
 module.exports = router;

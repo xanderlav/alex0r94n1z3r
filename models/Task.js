@@ -2,6 +2,10 @@ var Sequelize = require("sequelize");
 var db = require("../config/database");
 
 var Task = db.define('tasks_fx',{
+        taskId: {
+            type: Sequelize.INTEGER,
+            primaryKey: true
+        },
         taskInfo: {
             type: Sequelize.TEXT
         },
